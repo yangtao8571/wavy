@@ -1,0 +1,119 @@
+#########################################################################################
+# NAUTILUS
+#########################################################################################
+
+style "nautilus-toolbar" = "button"
+{
+	ythickness = 0
+	xthickness = 8
+	
+	GtkButton::child-displacement-y		= 0
+	GtkButton::inner-border				= {0, 12, 0, 0}
+		
+	bg[ACTIVE]   =  shade (0.50,@bg_color)
+	
+	fg[NORMAL] = mix(0.98, @fg_color, @bg_color)
+	
+	engine "pixmap"
+	{
+		image {
+			function 		= BOX
+			state			= NORMAL
+			file			= "nautilus/nautilus-pathbar-normal.png"
+			border			= { 0, 13, 0, 0 }
+			stretch			= TRUE
+		}
+		image {
+			function 		= BOX
+			state			= PRELIGHT
+			file			= "nautilus/nautilus-pathbar-prelight.png"
+			border			= { 0, 13, 0, 0 }
+			stretch			= TRUE
+		}
+		image {
+			function 		= BOX
+			state			= ACTIVE
+			file			= "nautilus/nautilus-pathbar-active.png"
+			border			= { 0, 13, 0, 0 }
+			stretch			= TRUE
+		}
+		#grey square fix#
+		image {
+			function 		= BOX
+			state			= INSENSITIVE
+			file			= "Others/null.png"
+			border			= { 0, 13, 0, 0 }
+			stretch			= TRUE
+		}
+	}
+}
+
+
+style "nautilus-toolbar-pixmap" = "default"
+{
+	ythickness = 1
+	xthickness = 0
+	
+		
+	engine "pixmap"
+	{
+		image {
+			function 		= BOX
+			file			= "nautilus/nautilus-toolbar-bg.png"
+			border			= { 289, 100, 17, 17 }
+			stretch			= TRUE
+		}
+	}
+}
+
+#textmodefix#
+style "entry-n" = "default"
+{
+	GtkWidget::interior_focus	= 1
+	xthickness = 4
+	ythickness = 0
+  	engine "pixmap"
+	{
+
+		# Text-entry
+		image
+		{
+			function		= SHADOW
+			file			= "nautilus/text-nautilus.png"
+			border			= { 900,5,5,5 }
+			stretch			= FALSE
+		}
+	image
+		{
+			function		= FLAT_BOX
+			file			= "nautilus/text-nautilus.png"
+			border			= { 0,0,0,0 }
+			stretch			= FALSE
+		}
+	}
+}
+
+style "nautilus-toolbar-toggle"
+{
+	ythickness = 0
+	xthickness = 2
+	
+		
+	engine "pixmap"
+	{
+		image {
+			function 		= BOX
+			file			= "Others/null.png"
+			border			= { 289,1, 0, 0 }
+			stretch			= TRUE
+		}
+	}
+}
+
+
+
+#nautilus location toolbar
+widget	"NautilusNavigationWindow.*.Toolbar"		style:highest "nautilus-toolbar-pixmap"
+widget_class "NautilusNavigationWindow.GtkTable.GtkToolbar.GtkToolItem.GtkHBox.NautilusLocationBar.GtkHBox.NautilusLocationEntry"	style "entry-n"
+widget_class "*Nautilus*Toolbar*Toggle*" style "nautilus-toolbar-toggle"
+widget_class "*NautilusPathBar.*" style "nautilus-toolbar" # afecta solo a los botones de direcciones :)

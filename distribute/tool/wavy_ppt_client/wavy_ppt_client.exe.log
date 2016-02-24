@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "wavy_ppt_client.py", line 14, in <module>
+  File "socket.pyc", line 224, in meth
+socket.error: [Errno 10061] 

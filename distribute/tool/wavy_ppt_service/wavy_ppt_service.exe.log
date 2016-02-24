@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "SocketServer.pyc", line 295, in _handle_request_noblock
+  File "SocketServer.pyc", line 321, in process_request
+  File "SocketServer.pyc", line 334, in finish_request
+  File "SocketServer.pyc", line 655, in __init__
+  File "wavy_ppt_service.py", line 23, in handle
+  File "win32com\client\dynamic.pyc", line 511, in __getattr__
+com_error: (-2147352567, '\xb7\xa2\xc9\xfa\xd2\xe2\xcd\xe2\xa1\xa3', (0, u'Microsoft Office PowerPoint 2007', u'Application.ActiveWindow : Invalid request.  There is no currently active document window.', u'', 0, -2147188160), None)
+Traceback (most recent call last):
+  File "SocketServer.pyc", line 295, in _handle_request_noblock
+  File "SocketServer.pyc", line 321, in process_request
+  File "SocketServer.pyc", line 334, in finish_request
+  File "SocketServer.pyc", line 655, in __init__
+  File "wavy_ppt_service.py", line 23, in handle
+  File "win32com\client\dynamic.pyc", line 511, in __getattr__
+com_error: (-2147352567, '\xb7\xa2\xc9\xfa\xd2\xe2\xcd\xe2\xa1\xa3', (0, u'Microsoft Office PowerPoint 2007', u'Application.ActiveWindow : Invalid request.  There is no currently active document window.', u'', 0, -2147188160), None)
+Traceback (most recent call last):
+  File "SocketServer.pyc", line 295, in _handle_request_noblock
+  File "SocketServer.pyc", line 321, in process_request
+  File "SocketServer.pyc", line 334, in finish_request
+  File "SocketServer.pyc", line 655, in __init__
+  File "wavy_ppt_service.py", line 23, in handle
+  File "win32com\client\dynamic.pyc", line 511, in __getattr__
+com_error: (-2147352567, '\xb7\xa2\xc9\xfa\xd2\xe2\xcd\xe2\xa1\xa3', (0, u'Microsoft Office PowerPoint 2007', u'Application.ActiveWindow : Invalid request.  There is no currently active document window.', u'', 0, -2147188160), None)
+Traceback (most recent call last):
+  File "wavy_ppt_service.py", line 31, in <module>
+  File "SocketServer.pyc", line 420, in __init__
+  File "SocketServer.pyc", line 434, in server_bind
+  File "socket.pyc", line 224, in meth
+socket.error: [Errno 10048] 通常每个套接字地址(协议/网络地址/端口)
+Traceback (most recent call last):
+  File "wavy_ppt_service.py", line 31, in <module>
+  File "SocketServer.pyc", line 420, in __init__
+  File "SocketServer.pyc", line 434, in server_bind
+  File "socket.pyc", line 224, in meth
+socket.error: [Errno 10048] 通常每个套接字地址(协议/网络地址/端口)

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Wii-Black
+Type=X-GNOME-Metatheme
+Comment=A Black Wii inspired theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Wii-Black
+MetacityTheme=Wii-Black
+IconTheme=Tango
